@@ -1,19 +1,19 @@
-# Mapper
+# MightyMapper
 
 [![Swift][swift-badge]][swift-url]
 [![License][mit-badge]][mit-url]
 
-**Mapper** is a tiny yet very powerful library which allows you to create custom strongly-typed instances from *any* kind of structured data (**JSON** and other data interchange formats, for example) with only a single initializer. And vice versa - with only a single method.
+**MightyMapper** is a tiny yet very powerful library which allows you to create custom strongly-typed instances from *any* kind of structured data (**JSON** and other data interchange formats, for example) with only a single initializer. And vice versa - with only a single method.
 
-**Mapper** extensively uses power of Swift generics and protocols, dramatically reducing the boilerplate you have to write. With **Mapper**, mapping is a breeze.
+**MightyMapper** extensively uses power of Swift generics and protocols, dramatically reducing the boilerplate you have to write. With **MightyMapper**, mapping is a breeze.
 
-The maing advantage of **Mapper** is that you don't need to write multiple initializers to support mapping from different formats (if you've done it before - you know what I mean), thus eliminating the boilerplate and leaving only the core logic you need. With **Mapper** your code is safe and expressive.
+The maing advantage of **MightyMapper** is that you don't need to write multiple initializers to support mapping from different formats (if you've done it before - you know what I mean), thus eliminating the boilerplate and leaving only the core logic you need. With **MightyMapper** your code is safe and expressive.
 
-And while reducing boilerplate, **Mapper** is also amazingly fast. It doesn't use reflection, and generics allows the compiler to optimize code in the most effective way.
+And while reducing boilerplate, **MightyMapper** is also amazingly fast. It doesn't use reflection, and generics allows the compiler to optimize code in the most effective way.
 
-**Mapper** itself is just a core mapping logic without any implementations. To actually use **Mapper**, you also have to import one of Mapper-conforming libraries. You can find a current list of them [here](#mapper-compatible-libraries). If you want to support **Mapper** for your data types, checkout [Adopting Mapper](#adopting-mapper) short guide.
+**MightyMapper** itself is just a core mapping logic without any implementations. To actually use **MightyMapper**, you also have to import one of Mapper-conforming libraries. You can find a current list of them [here](#mapper-compatible-libraries). If you want to support **MightyMapper** for your data types, checkout [Adopting Mapper](#adopting-mapper) short guide.
 
-**Mapper** is deeply inspired by Lyft's [Mapper](https://github.com/lyft/mapper). You can learn more about the concept behind their idea in [this talk](https://realm.io/news/slug-keith-smiley-embrace-immutability/).
+**MightyMapper** is deeply inspired by Lyft's [Mapper](https://github.com/lyft/mapper). You can learn more about the concept behind their idea in [this talk](https://realm.io/news/slug-keith-smiley-embrace-immutability/).
 
 ## Showcase
 
@@ -108,9 +108,9 @@ let package = Package(
 
 #### Basics
 
-**Mapper** allows you to map data in both ways, and so it has two major parts: **in** mapping (for example, *JSON -> your model*) and **out** mapping (*your model -> JSON*). So the two main protocols of **Mapper** is `InMappable` and `OutMappable`.
+**MightyMapper** allows you to map data in both ways, and so it has two major parts: **in** mapping (for example, *JSON -> your model*) and **out** mapping (*your model -> JSON*). So the two main protocols of **MightyMapper** is `InMappable` and `OutMappable`.
 
-To use **Mapper** in it's full glory, first you need to define nested `MappingKeys` enum. `MappingKeys` are needed to represent keys from/to which your properties will be mapped. Using nested `MappingKeys` is a win for type-safety and can save you from some painful typos:
+To use **MightyMapper** in it's full glory, first you need to define nested `MappingKeys` enum. `MappingKeys` are needed to represent keys from/to which your properties will be mapped. Using nested `MappingKeys` is a win for type-safety and can save you from some painful typos:
 
 ```swift
 struct City {
@@ -204,7 +204,7 @@ struct Album : Mappable {
 ```
 
 #### Mapping enums
-**Mapper** can also automatically map enums with raw values, which is neat.
+**MightyMapper** can also automatically map enums with raw values, which is neat.
 
 ```swift
 enum Wood : String {
@@ -244,7 +244,7 @@ struct Guitar : Mappable {
 
 #### Nesting `Mappable`s
 
-Cool thing about **Mapper** is that you can easily map instances which are itself `Mappable`:
+Cool thing about **MightyMapper** is that you can easily map instances which are itself `Mappable`:
 
 ```swift
 struct Sport : Mappable {
@@ -458,7 +458,7 @@ extension Date : OutMappableWithContext {
 
 #### "Unguaranteed" mapping
 
-**Mapper** can work only with four basic "primitive" types: `Int`, `Double`, `Bool`, `String` (these four are expected to work with any **Mapper**-conforming type). But, of course, you can map other, more specific primitive types that your format supports. In order to do that, you should use `.unguaranteedMap` and `.unguaranteedMapArray` methods:
+**MightyMapper** can work only with four basic "primitive" types: `Int`, `Double`, `Bool`, `String` (these four are expected to work with any **MightyMapper**-conforming type). But, of course, you can map other, more specific primitive types that your format supports. In order to do that, you should use `.unguaranteedMap` and `.unguaranteedMapArray` methods:
 
 ```swift
 struct TeamStat : Mappable {
