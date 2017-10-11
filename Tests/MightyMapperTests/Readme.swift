@@ -209,6 +209,34 @@ extension MapperNeomap : InMap {
         return nil
     }
     
+    public var int32: Int32? {
+        if case .int32(let value) = self {
+            return value
+        }
+        return nil
+    }
+    
+    public var uint: UInt? {
+        if case .uint(let value) = self {
+            return value
+        }
+        return nil
+    }
+    
+    public var uint8: UInt8? {
+        if case .uint8(let value) = self {
+            return value
+        }
+        return nil
+    }
+    
+    public var float: Float? {
+        if case .float(let value) = self {
+            return value
+        }
+        return nil
+    }
+    
     public var bool: Bool? {
         if case .bool(let value) = self {
             return value
@@ -370,6 +398,22 @@ extension MapperNeomap : OutMap {
     
     public static func fromArray(_ array: [MapperNeomap]) -> MapperNeomap? {
         return .array(array)
+    }
+    
+    public static func fromFloat(_ float: Float) -> MapperNeomap? {
+        return .float(float)
+    }
+    
+    public static func fromUInt(_ uint: UInt) -> MapperNeomap? {
+        return .uint(uint)
+    }
+    
+    public static func fromUInt8(_ uint8: UInt8) -> MapperNeomap? {
+        return .uint8(uint8)
+    }
+    
+    public static func fromInt32(_ int32: Int32) -> MapperNeomap? {
+        return .int32(int32)
     }
     
 }
