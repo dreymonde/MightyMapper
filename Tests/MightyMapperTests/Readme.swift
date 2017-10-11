@@ -1,5 +1,74 @@
 import MightyMapper
 
+struct City : InMappable, OutMappable {
+    
+    let name: String
+    let population: Int
+    
+    enum MappingKeys : String, Key {
+        case name, population
+    }
+    
+    init<Source>(mapper: InMapper<Source, MappingKeys>) throws {
+        self.name = try mapper.map(from: .name)
+        self.population = try mapper.map(from: .population)
+    }
+    
+    func outMap<Destination>(mapper: inout OutMapper<Destination, MappingKeys>) throws {
+        try mapper.map(self.name, to: .name)
+        try mapper.map(self.population, to: .population)
+    }
+    
+}
+
+enum Gender : String {
+    case male
+    case female
+}
+
+// Mappable = InMappable & OutMappable
+struct Person : Mappable {
+    
+    let name: String
+    let gender: Gender
+    let city: City
+    let identifier: Int
+    let isRegistered: Bool
+    let biographyPoints: [String]
+    
+    enum MappingKeys : String, Key {
+        case name, gender, city, identifier, registered, biographyPoints
+    }
+    
+    init<Source>(mapper: InMapper<Source, MappingKeys>) throws {
+        self.name = try mapper.map(from: .name)
+        self.gender = try mapper.map(from: .gender)
+        self.city = try mapper.map(from: .city)
+        self.identifier = try mapper.map(from: .identifier)
+        self.isRegistered = try mapper.map(from: .registered)
+        self.biographyPoints = try mapper.map(from: .biographyPoints)
+    }
+    
+    func outMap<Destination>(mapper: inout OutMapper<Destination, Person.MappingKeys>) throws {
+        try mapper.map(self.name, to: .name)
+        try mapper.map(self.gender, to: .gender)
+        try mapper.map(self.city, to: .city)
+        try mapper.map(self.identifier, to: .identifier)
+        try mapper.map(self.isRegistered, to: .registered)
+        try mapper.map(self.biographyPoints, to: .biographyPoints)
+    }
+    
+}
+
+// in-mapping
+//let jessy = Person(from: json)
+//let messi = Person(from: messagePack)
+//let michael = Person(from: mongoBSON)
+//
+//// out-mapping
+//let json: JSON = try jessy.map()
+//let messi: MessagePack = try messi.map()
+
 // MARK: - Context
 
 enum SuperContext {
@@ -13,7 +82,7 @@ struct SuperheroHelper {
     let name: String
     let id: Int
     
-    enum MappingKeys : String, MappingKey {
+    enum MappingKeys : String, Key {
         case name
         case id, identifier, g_id
     }
@@ -53,7 +122,7 @@ struct Superhero {
     let name: String
     let helper: SuperheroHelper
     
-    enum MappingKeys : String, MappingKey {
+    enum MappingKeys : String, Key {
         case name, helper
     }
     

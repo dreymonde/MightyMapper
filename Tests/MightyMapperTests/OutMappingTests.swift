@@ -208,26 +208,26 @@ class OutMapperTests: XCTestCase {
     func testBasicMappingWithContext() throws {
         let appleDict: [String : Any] = ["apple-int": 1]
         let apple = try Nest3(from: appleDict, withContext: .apple)
-        XCTAssertEqual(appleDict as NSDictionary, try apple.map(withContext: .apple) as [String : Any] as NSDictionary)
+        XCTAssertEqual(appleDict as NSDictionary, try apple.outMap(withContext: .apple) as [String : Any] as NSDictionary)
         let peachDict: [String : Any] = ["peach-int": 2]
         let peach = try Nest3(from: peachDict, withContext: .peach)
-        XCTAssertEqual(peachDict as NSDictionary, try peach.map(withContext: .peach) as [String : Any] as NSDictionary)
+        XCTAssertEqual(peachDict as NSDictionary, try peach.outMap(withContext: .peach) as [String : Any] as NSDictionary)
         let orangeDict: [String : Any] = ["orange-int": 3]
         let orange = try Nest3(from: orangeDict, withContext: .orange)
-        XCTAssertEqual(orangeDict as NSDictionary, try orange.map(withContext: .orange) as [String : Any] as NSDictionary)
+        XCTAssertEqual(orangeDict as NSDictionary, try orange.outMap(withContext: .orange) as [String : Any] as NSDictionary)
     }
     
     func testContextInference() throws {
         let peachDict: [String : Any] = ["nest": ["peach-int": 207]]
         let peach = try Test9(from: peachDict, withContext: .peach)
-        XCTAssertEqual(peachDict as NSDictionary, try peach.map(withContext: .peach) as [String : Any] as NSDictionary)
+        XCTAssertEqual(peachDict as NSDictionary, try peach.outMap(withContext: .peach) as [String : Any] as NSDictionary)
     }
     
     func testArrayMappingWithContext() throws {
         let orangesDict: [[String : Any]] = [2, 0, 1, 6].map({ ["orange-int": $0] })
         let dict: [String : Any] = ["nests": orangesDict]
         let oranges = try Test10(from: dict, withContext: .orange)
-        let back = try oranges.map(withContext: .orange) as [String : Any] as NSDictionary
+        let back = try oranges.outMap(withContext: .orange) as [String : Any] as NSDictionary
         XCTAssertEqual(dict as NSDictionary, back)
     }
     
