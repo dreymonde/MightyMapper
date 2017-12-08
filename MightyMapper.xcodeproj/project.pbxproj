@@ -20,42 +20,42 @@
 		7C34D0511F8E57EC00FDD3B2 /* InMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0441F8E57EC00FDD3B2 /* InMappingTests.swift */; };
 		7C34D0521F8E57EC00FDD3B2 /* InMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0441F8E57EC00FDD3B2 /* InMappingTests.swift */; };
 		7C34D0531F8E57EC00FDD3B2 /* InMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0441F8E57EC00FDD3B2 /* InMappingTests.swift */; };
-		7C34D05F1F8E5A4800FDD3B2 /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */; };
-		7C34D0601F8E5A4800FDD3B2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */; };
-		7C34D0611F8E5A4800FDD3B2 /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */; };
-		7C34D0621F8E5A4800FDD3B2 /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */; };
-		7C34D0631F8E5A4800FDD3B2 /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */; };
-		7C34D0641F8E5A4800FDD3B2 /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */; };
-		7C34D0651F8E5A4800FDD3B2 /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */; };
-		7C34D0661F8E5A4800FDD3B2 /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */; };
-		7C34D0671F8E5A4800FDD3B2 /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */; };
-		7C34D0681F8E5A4800FDD3B2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */; };
-		7C34D0691F8E5A4800FDD3B2 /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */; };
-		7C34D06A1F8E5A4800FDD3B2 /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */; };
-		7C34D06B1F8E5A4800FDD3B2 /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */; };
-		7C34D06C1F8E5A4800FDD3B2 /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */; };
-		7C34D06D1F8E5A4800FDD3B2 /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */; };
-		7C34D06E1F8E5A4800FDD3B2 /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */; };
-		7C34D06F1F8E5A4900FDD3B2 /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */; };
-		7C34D0701F8E5A4900FDD3B2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */; };
-		7C34D0711F8E5A4900FDD3B2 /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */; };
-		7C34D0721F8E5A4900FDD3B2 /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */; };
-		7C34D0731F8E5A4900FDD3B2 /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */; };
-		7C34D0741F8E5A4900FDD3B2 /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */; };
-		7C34D0751F8E5A4900FDD3B2 /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */; };
-		7C34D0761F8E5A4900FDD3B2 /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */; };
-		7C34D0771F8E5A4900FDD3B2 /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */; };
-		7C34D0781F8E5A4900FDD3B2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */; };
-		7C34D0791F8E5A4900FDD3B2 /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */; };
-		7C34D07A1F8E5A4900FDD3B2 /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */; };
-		7C34D07B1F8E5A4900FDD3B2 /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */; };
-		7C34D07C1F8E5A4900FDD3B2 /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */; };
-		7C34D07D1F8E5A4900FDD3B2 /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */; };
-		7C34D07E1F8E5A4900FDD3B2 /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */; };
-		7C34D0801F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */; };
-		7C34D0811F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */; };
-		7C34D0821F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */; };
-		7C34D0831F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */; };
+		7CCF59D61FDB157C00B3F7EF /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */; };
+		7CCF59D71FDB157C00B3F7EF /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CC1FDB155200B3F7EF /* OutMap.swift */; };
+		7CCF59D81FDB157C00B3F7EF /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */; };
+		7CCF59D91FDB157C00B3F7EF /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */; };
+		7CCF59DA1FDB157C00B3F7EF /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CC1FDB155200B3F7EF /* OutMap.swift */; };
+		7CCF59DB1FDB157C00B3F7EF /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */; };
+		7CCF59DC1FDB157D00B3F7EF /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */; };
+		7CCF59DD1FDB157D00B3F7EF /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CC1FDB155200B3F7EF /* OutMap.swift */; };
+		7CCF59DE1FDB157D00B3F7EF /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */; };
+		7CCF59DF1FDB157E00B3F7EF /* OutMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */; };
+		7CCF59E01FDB157E00B3F7EF /* OutMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CC1FDB155200B3F7EF /* OutMap.swift */; };
+		7CCF59E11FDB157E00B3F7EF /* OutMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */; };
+		7CCF59E21FDB158100B3F7EF /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CF1FDB155200B3F7EF /* InMap.swift */; };
+		7CCF59E31FDB158100B3F7EF /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D01FDB155200B3F7EF /* InMappable.swift */; };
+		7CCF59E41FDB158100B3F7EF /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D11FDB155200B3F7EF /* InMapper.swift */; };
+		7CCF59E51FDB158100B3F7EF /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */; };
+		7CCF59E61FDB158200B3F7EF /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CF1FDB155200B3F7EF /* InMap.swift */; };
+		7CCF59E71FDB158200B3F7EF /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D01FDB155200B3F7EF /* InMappable.swift */; };
+		7CCF59E81FDB158200B3F7EF /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D11FDB155200B3F7EF /* InMapper.swift */; };
+		7CCF59E91FDB158200B3F7EF /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */; };
+		7CCF59EA1FDB158200B3F7EF /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CF1FDB155200B3F7EF /* InMap.swift */; };
+		7CCF59EB1FDB158200B3F7EF /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D01FDB155200B3F7EF /* InMappable.swift */; };
+		7CCF59EC1FDB158200B3F7EF /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D11FDB155200B3F7EF /* InMapper.swift */; };
+		7CCF59ED1FDB158200B3F7EF /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */; };
+		7CCF59EE1FDB158300B3F7EF /* InMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59CF1FDB155200B3F7EF /* InMap.swift */; };
+		7CCF59EF1FDB158300B3F7EF /* InMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D01FDB155200B3F7EF /* InMappable.swift */; };
+		7CCF59F01FDB158300B3F7EF /* InMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D11FDB155200B3F7EF /* InMapper.swift */; };
+		7CCF59F11FDB158300B3F7EF /* CocoaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */; };
+		7CCF59F21FDB158800B3F7EF /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C81FDB155200B3F7EF /* IndexPath.swift */; };
+		7CCF59F31FDB158800B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
+		7CCF59F41FDB158800B3F7EF /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C81FDB155200B3F7EF /* IndexPath.swift */; };
+		7CCF59F51FDB158800B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
+		7CCF59F61FDB158900B3F7EF /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C81FDB155200B3F7EF /* IndexPath.swift */; };
+		7CCF59F71FDB158900B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
+		7CCF59F81FDB158A00B3F7EF /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C81FDB155200B3F7EF /* IndexPath.swift */; };
+		7CCF59F91FDB158A00B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
 		8933C7851EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
 		8933C7861EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
 		8933C7871EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
@@ -101,15 +101,15 @@
 		7C34D0411F8E57EC00FDD3B2 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		7C34D0431F8E57EC00FDD3B2 /* Readme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readme.swift; sourceTree = "<group>"; };
 		7C34D0441F8E57EC00FDD3B2 /* InMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMappingTests.swift; sourceTree = "<group>"; };
-		7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPath.swift; sourceTree = "<group>"; };
-		7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
-		7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMapper.swift; sourceTree = "<group>"; };
-		7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMap.swift; sourceTree = "<group>"; };
-		7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMappable.swift; sourceTree = "<group>"; };
-		7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMap.swift; sourceTree = "<group>"; };
-		7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMappable.swift; sourceTree = "<group>"; };
-		7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMapper.swift; sourceTree = "<group>"; };
-		7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMapper.swift; sourceTree = "<group>"; };
+		7CCF59C81FDB155200B3F7EF /* IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPath.swift; sourceTree = "<group>"; };
+		7CCF59C91FDB155200B3F7EF /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMapper.swift; sourceTree = "<group>"; };
+		7CCF59CC1FDB155200B3F7EF /* OutMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMap.swift; sourceTree = "<group>"; };
+		7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutMappable.swift; sourceTree = "<group>"; };
+		7CCF59CF1FDB155200B3F7EF /* InMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMap.swift; sourceTree = "<group>"; };
+		7CCF59D01FDB155200B3F7EF /* InMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMappable.swift; sourceTree = "<group>"; };
+		7CCF59D11FDB155200B3F7EF /* InMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMapper.swift; sourceTree = "<group>"; };
+		7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMapper.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* MightyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MightyMapper.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* MightyMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MightyMapperTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MightyMapper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MightyMapper.plist; sourceTree = "<group>"; };
@@ -207,35 +207,34 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
-		7C34D0541F8E5A3D00FDD3B2 /* Mapper */ = {
+		7CCF59C71FDB155200B3F7EF /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				7C34D07F1F8E5C4100FDD3B2 /* CocoaMapper.swift */,
-				7C34D0551F8E5A3D00FDD3B2 /* IndexPath.swift */,
-				7C34D0561F8E5A3D00FDD3B2 /* Mappable.swift */,
-				7C34D0571F8E5A3D00FDD3B2 /* OutMapper */,
-				7C34D05B1F8E5A3D00FDD3B2 /* InMapper */,
+				7CCF59C81FDB155200B3F7EF /* IndexPath.swift */,
+				7CCF59C91FDB155200B3F7EF /* Mappable.swift */,
+				7CCF59CA1FDB155200B3F7EF /* OutMapper */,
+				7CCF59CE1FDB155200B3F7EF /* InMapper */,
+				7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */,
 			);
-			name = Mapper;
-			path = ../../OpenSource/Mapper/Sources/Mapper;
+			path = Mapper;
 			sourceTree = "<group>";
 		};
-		7C34D0571F8E5A3D00FDD3B2 /* OutMapper */ = {
+		7CCF59CA1FDB155200B3F7EF /* OutMapper */ = {
 			isa = PBXGroup;
 			children = (
-				7C34D0581F8E5A3D00FDD3B2 /* OutMapper.swift */,
-				7C34D0591F8E5A3D00FDD3B2 /* OutMap.swift */,
-				7C34D05A1F8E5A3D00FDD3B2 /* OutMappable.swift */,
+				7CCF59CB1FDB155200B3F7EF /* OutMapper.swift */,
+				7CCF59CC1FDB155200B3F7EF /* OutMap.swift */,
+				7CCF59CD1FDB155200B3F7EF /* OutMappable.swift */,
 			);
 			path = OutMapper;
 			sourceTree = "<group>";
 		};
-		7C34D05B1F8E5A3D00FDD3B2 /* InMapper */ = {
+		7CCF59CE1FDB155200B3F7EF /* InMapper */ = {
 			isa = PBXGroup;
 			children = (
-				7C34D05C1F8E5A3D00FDD3B2 /* InMap.swift */,
-				7C34D05E1F8E5A3D00FDD3B2 /* InMapper.swift */,
-				7C34D05D1F8E5A3D00FDD3B2 /* InMappable.swift */,
+				7CCF59CF1FDB155200B3F7EF /* InMap.swift */,
+				7CCF59D01FDB155200B3F7EF /* InMappable.swift */,
+				7CCF59D11FDB155200B3F7EF /* InMapper.swift */,
 			);
 			path = InMapper;
 			sourceTree = "<group>";
@@ -244,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				8933C7841EB5B820000D00A4 /* MightyMapper.swift */,
-				7C34D0541F8E5A3D00FDD3B2 /* Mapper */,
+				7CCF59C71FDB155200B3F7EF /* Mapper */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -558,16 +557,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34D0621F8E5A4800FDD3B2 /* OutMap.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* MightyMapper.swift in Sources */,
-				7C34D0801F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */,
-				7C34D0601F8E5A4800FDD3B2 /* Mappable.swift in Sources */,
-				7C34D05F1F8E5A4800FDD3B2 /* IndexPath.swift in Sources */,
-				7C34D0651F8E5A4800FDD3B2 /* InMappable.swift in Sources */,
-				7C34D0641F8E5A4800FDD3B2 /* InMap.swift in Sources */,
-				7C34D0631F8E5A4800FDD3B2 /* OutMappable.swift in Sources */,
-				7C34D0611F8E5A4800FDD3B2 /* OutMapper.swift in Sources */,
-				7C34D0661F8E5A4800FDD3B2 /* InMapper.swift in Sources */,
+				7CCF59F31FDB158800B3F7EF /* Mappable.swift in Sources */,
+				7CCF59D91FDB157C00B3F7EF /* OutMapper.swift in Sources */,
+				7CCF59E31FDB158100B3F7EF /* InMappable.swift in Sources */,
+				7CCF59E41FDB158100B3F7EF /* InMapper.swift in Sources */,
+				7CCF59F21FDB158800B3F7EF /* IndexPath.swift in Sources */,
+				7CCF59DB1FDB157C00B3F7EF /* OutMappable.swift in Sources */,
+				7CCF59DA1FDB157C00B3F7EF /* OutMap.swift in Sources */,
+				7CCF59E51FDB158100B3F7EF /* CocoaMapper.swift in Sources */,
+				7CCF59E21FDB158100B3F7EF /* InMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,16 +586,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34D0721F8E5A4900FDD3B2 /* OutMap.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* MightyMapper.swift in Sources */,
-				7C34D0831F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */,
-				7C34D0701F8E5A4900FDD3B2 /* Mappable.swift in Sources */,
-				7C34D06F1F8E5A4900FDD3B2 /* IndexPath.swift in Sources */,
-				7C34D0751F8E5A4900FDD3B2 /* InMappable.swift in Sources */,
-				7C34D0741F8E5A4900FDD3B2 /* InMap.swift in Sources */,
-				7C34D0731F8E5A4900FDD3B2 /* OutMappable.swift in Sources */,
-				7C34D0711F8E5A4900FDD3B2 /* OutMapper.swift in Sources */,
-				7C34D0761F8E5A4900FDD3B2 /* InMapper.swift in Sources */,
+				7CCF59F71FDB158900B3F7EF /* Mappable.swift in Sources */,
+				7CCF59DC1FDB157D00B3F7EF /* OutMapper.swift in Sources */,
+				7CCF59EB1FDB158200B3F7EF /* InMappable.swift in Sources */,
+				7CCF59EC1FDB158200B3F7EF /* InMapper.swift in Sources */,
+				7CCF59F61FDB158900B3F7EF /* IndexPath.swift in Sources */,
+				7CCF59DE1FDB157D00B3F7EF /* OutMappable.swift in Sources */,
+				7CCF59DD1FDB157D00B3F7EF /* OutMap.swift in Sources */,
+				7CCF59ED1FDB158200B3F7EF /* CocoaMapper.swift in Sources */,
+				7CCF59EA1FDB158200B3F7EF /* InMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,16 +603,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34D07A1F8E5A4900FDD3B2 /* OutMap.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* MightyMapper.swift in Sources */,
-				7C34D0811F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */,
-				7C34D0781F8E5A4900FDD3B2 /* Mappable.swift in Sources */,
-				7C34D0771F8E5A4900FDD3B2 /* IndexPath.swift in Sources */,
-				7C34D07D1F8E5A4900FDD3B2 /* InMappable.swift in Sources */,
-				7C34D07C1F8E5A4900FDD3B2 /* InMap.swift in Sources */,
-				7C34D07B1F8E5A4900FDD3B2 /* OutMappable.swift in Sources */,
-				7C34D0791F8E5A4900FDD3B2 /* OutMapper.swift in Sources */,
-				7C34D07E1F8E5A4900FDD3B2 /* InMapper.swift in Sources */,
+				7CCF59F91FDB158A00B3F7EF /* Mappable.swift in Sources */,
+				7CCF59DF1FDB157E00B3F7EF /* OutMapper.swift in Sources */,
+				7CCF59EF1FDB158300B3F7EF /* InMappable.swift in Sources */,
+				7CCF59F01FDB158300B3F7EF /* InMapper.swift in Sources */,
+				7CCF59F81FDB158A00B3F7EF /* IndexPath.swift in Sources */,
+				7CCF59E11FDB157E00B3F7EF /* OutMappable.swift in Sources */,
+				7CCF59E01FDB157E00B3F7EF /* OutMap.swift in Sources */,
+				7CCF59F11FDB158300B3F7EF /* CocoaMapper.swift in Sources */,
+				7CCF59EE1FDB158300B3F7EF /* InMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,16 +620,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C34D06A1F8E5A4800FDD3B2 /* OutMap.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* MightyMapper.swift in Sources */,
-				7C34D0821F8E5C4200FDD3B2 /* CocoaMapper.swift in Sources */,
-				7C34D0681F8E5A4800FDD3B2 /* Mappable.swift in Sources */,
-				7C34D0671F8E5A4800FDD3B2 /* IndexPath.swift in Sources */,
-				7C34D06D1F8E5A4800FDD3B2 /* InMappable.swift in Sources */,
-				7C34D06C1F8E5A4800FDD3B2 /* InMap.swift in Sources */,
-				7C34D06B1F8E5A4800FDD3B2 /* OutMappable.swift in Sources */,
-				7C34D0691F8E5A4800FDD3B2 /* OutMapper.swift in Sources */,
-				7C34D06E1F8E5A4800FDD3B2 /* InMapper.swift in Sources */,
+				7CCF59F51FDB158800B3F7EF /* Mappable.swift in Sources */,
+				7CCF59D61FDB157C00B3F7EF /* OutMapper.swift in Sources */,
+				7CCF59E71FDB158200B3F7EF /* InMappable.swift in Sources */,
+				7CCF59E81FDB158200B3F7EF /* InMapper.swift in Sources */,
+				7CCF59F41FDB158800B3F7EF /* IndexPath.swift in Sources */,
+				7CCF59D81FDB157C00B3F7EF /* OutMappable.swift in Sources */,
+				7CCF59D71FDB157C00B3F7EF /* OutMap.swift in Sources */,
+				7CCF59E91FDB158200B3F7EF /* CocoaMapper.swift in Sources */,
+				7CCF59E61FDB158200B3F7EF /* InMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
