@@ -56,10 +56,6 @@
 		7CCF59F71FDB158900B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
 		7CCF59F81FDB158A00B3F7EF /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C81FDB155200B3F7EF /* IndexPath.swift */; };
 		7CCF59F91FDB158A00B3F7EF /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF59C91FDB155200B3F7EF /* Mappable.swift */; };
-		8933C7851EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
-		8933C7861EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
-		8933C7871EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
-		8933C7881EB5B820000D00A4 /* MightyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* MightyMapper.swift */; };
 		8933C78E1EB5B82C000D00A4 /* MightyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MightyMapperTests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* MightyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MightyMapperTests.swift */; };
 		8933C7901EB5B82D000D00A4 /* MightyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MightyMapperTests.swift */; };
@@ -110,7 +106,6 @@
 		7CCF59D01FDB155200B3F7EF /* InMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMappable.swift; sourceTree = "<group>"; };
 		7CCF59D11FDB155200B3F7EF /* InMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMapper.swift; sourceTree = "<group>"; };
 		7CCF59D21FDB155200B3F7EF /* CocoaMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMapper.swift; sourceTree = "<group>"; };
-		8933C7841EB5B820000D00A4 /* MightyMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MightyMapper.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* MightyMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MightyMapperTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* MightyMapper.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MightyMapper.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* MightyMapperTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MightyMapperTests.plist; sourceTree = "<group>"; };
@@ -242,7 +237,6 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7841EB5B820000D00A4 /* MightyMapper.swift */,
 				7CCF59C71FDB155200B3F7EF /* Mapper */,
 			);
 			path = Sources;
@@ -557,7 +551,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7851EB5B820000D00A4 /* MightyMapper.swift in Sources */,
 				7CCF59F31FDB158800B3F7EF /* Mappable.swift in Sources */,
 				7CCF59D91FDB157C00B3F7EF /* OutMapper.swift in Sources */,
 				7CCF59E31FDB158100B3F7EF /* InMappable.swift in Sources */,
@@ -586,7 +579,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7871EB5B820000D00A4 /* MightyMapper.swift in Sources */,
 				7CCF59F71FDB158900B3F7EF /* Mappable.swift in Sources */,
 				7CCF59DC1FDB157D00B3F7EF /* OutMapper.swift in Sources */,
 				7CCF59EB1FDB158200B3F7EF /* InMappable.swift in Sources */,
@@ -603,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7881EB5B820000D00A4 /* MightyMapper.swift in Sources */,
 				7CCF59F91FDB158A00B3F7EF /* Mappable.swift in Sources */,
 				7CCF59DF1FDB157E00B3F7EF /* OutMapper.swift in Sources */,
 				7CCF59EF1FDB158300B3F7EF /* InMappable.swift in Sources */,
@@ -620,7 +611,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7861EB5B820000D00A4 /* MightyMapper.swift in Sources */,
 				7CCF59F51FDB158800B3F7EF /* Mappable.swift in Sources */,
 				7CCF59D61FDB157C00B3F7EF /* OutMapper.swift in Sources */,
 				7CCF59E71FDB158200B3F7EF /* InMappable.swift in Sources */,
