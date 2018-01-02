@@ -3,7 +3,7 @@
 public protocol OutMapperProtocol {
     
     associatedtype Destination: OutMap
-    associatedtype IndexPath: Key
+    associatedtype IndexPath: MapperKey
     
     /// Destination of mapping (output).
     var destination: Destination { get set }
@@ -206,7 +206,7 @@ extension ContextualOutMapperProtocol {
 }
 
 /// Object that maps strongly-typed instances to structured data instances.
-public struct OutMapper<Destination : OutMap, MappingKeys : Key> : OutMapperProtocol {
+public struct OutMapper<Destination : OutMap, MappingKeys : MapperKey> : OutMapperProtocol {
     
     public typealias IndexPath = MappingKeys
     public var destination: Destination
@@ -241,7 +241,7 @@ public struct BasicOutMapper<Destination : OutMap> : OutMapperProtocol {
 }
 
 /// Object that maps strongly-typed instances to structured data instances using type-specific context.
-public struct ContextualOutMapper<Destination : OutMap, MappingKeys : Key, Context> : ContextualOutMapperProtocol {
+public struct ContextualOutMapper<Destination : OutMap, MappingKeys : MapperKey, Context> : ContextualOutMapperProtocol {
     
     public typealias IndexPath = MappingKeys
     public var destination: Destination

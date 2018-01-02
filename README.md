@@ -23,7 +23,7 @@ struct City : InMappable, OutMappable {
     let name: String
     let population: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, population
     }
     
@@ -54,7 +54,7 @@ struct Person : Mappable {
     let isRegistered: Bool
     let biographyPoints: [String]
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, gender, city, identifier, registered, biographyPoints
     }
     
@@ -92,14 +92,14 @@ let messi: MessagePack = try messi.outMap()
 
 ## Installation
 
-- Add `Mapper` to your `Package.swift`
+- Add `MightyMapper` to your `Package.swift`
 
 ```swift
 import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/Zewo/Mapper.git", majorVersion: 0, minor: 14),
+        .Package(url: "https://github.com/dreymonde/MightyMapper.git", majorVersion: 0, minor: 2),
     ]
 )
 ```
@@ -118,14 +118,14 @@ struct City {
     let name: String
     let population: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, population
     }
     
 }
 ```
 
-Make sure to declare `MappingKeys` as `Key`!
+Make sure to declare `MappingKeys` as `MapperKey`!
 
 Now we're going to write mapping code. Let's start with *in mapping*:
 
@@ -188,7 +188,7 @@ struct Album : Mappable {
     
     let songs: [String]
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case songs
     }
     
@@ -225,7 +225,7 @@ struct Guitar : Mappable {
     let wood: Wood
     let strings: Strings
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case wood, strings
     }
     
@@ -251,7 +251,7 @@ struct Sport : Mappable {
     
     let name: String
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name
     }
     
@@ -271,7 +271,7 @@ struct Team : Mappable {
     let name: String
     let foundationYear: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case sport
         case name
         case foundationYear = "foundation-year"
@@ -311,7 +311,7 @@ struct SuperheroHelper {
     let name: String
     let id: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name
         case id, identifier, g_id
     }
@@ -367,7 +367,7 @@ struct Superhero {
     let name: String
     let helper: SuperheroHelper
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, helper
     }
     
@@ -466,7 +466,7 @@ struct TeamStat : Mappable {
     let rate: Int32
     let goals: [Int32]
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case rate, goals
     }
     

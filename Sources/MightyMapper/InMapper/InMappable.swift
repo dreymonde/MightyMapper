@@ -8,7 +8,7 @@ public protocol FromInMapMappable {
 /// Entity which can be mapped (initialized) from any structured data type.
 public protocol InMappable : FromInMapMappable {
     
-    associatedtype MappingKeys : Key
+    associatedtype MappingKeys : MapperKey
     
     /// Creates instance from instance of `Source` packed into mapper with type-specific `MappingKeys`.
     init<Source>(mapper: InMapper<Source, MappingKeys>) throws
@@ -44,7 +44,7 @@ extension BasicInMappable {
 public protocol InMappableWithContext {
     
     associatedtype MappingContext
-    associatedtype MappingKeys: Key
+    associatedtype MappingKeys: MapperKey
     
     /// Creates instance from instance of `Source` packed into contextual mapper with type-specific `MappingKeys`.
     init<Source>(mapper: ContextualInMapper<Source, MappingKeys, MappingContext>) throws

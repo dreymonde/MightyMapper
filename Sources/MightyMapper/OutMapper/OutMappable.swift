@@ -16,7 +16,7 @@ extension ToOutMapMappable {
 /// Entity which can be mapped to any structured data type.
 public protocol OutMappable : ToOutMapMappable {
     
-    associatedtype MappingKeys : Key
+    associatedtype MappingKeys : MapperKey
     
     /// Maps instance data to `mapper`.
     ///
@@ -63,7 +63,7 @@ extension BasicOutMappable {
 /// Entity which can be mapped to any structured data type in multiple ways using user-determined context instance.
 public protocol OutMappableWithContext {
     
-    associatedtype MappingKeys : Key
+    associatedtype MappingKeys : MapperKey
     
     /// Context allows user to map data in different ways.
     associatedtype MappingContext

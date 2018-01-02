@@ -11,13 +11,21 @@ public struct MappingIndex : RawRepresentable {
 
 public typealias MappingIndexPath = [MappingIndex]
 
-public protocol Key {
+extension RawRepresentable where RawValue == String {
+    
+    internal var index: MappingIndex {
+        return MappingIndex(rawValue: self.rawValue)
+    }
+    
+}
+
+public protocol MapperKey {
     
     var index: MappingIndex { get }
     
 }
 
-extension String : Key {
+extension String : MapperKey {
     
     public var index: MappingIndex {
         return MappingIndex(rawValue: self)
@@ -25,7 +33,7 @@ extension String : Key {
     
 }
 
-extension Key where Self : RawRepresentable, Self.RawValue == String {
+extension MapperKey where Self : RawRepresentable, Self.RawValue == String {
     
     public var index: MappingIndex {
         return MappingIndex(rawValue: self.rawValue)
@@ -54,7 +62,7 @@ extension Key where Self : RawRepresentable, Self.RawValue == String {
 //    }
 //}
 //
-public enum NoKeys : Key {
+public enum NoKeys : MapperKey {
     public var index: MappingIndex {
         return MappingIndex(rawValue: "")
     }

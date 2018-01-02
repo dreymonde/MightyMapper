@@ -5,7 +5,7 @@ struct City : InMappable, OutMappable {
     let name: String
     let population: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, population
     }
     
@@ -36,7 +36,7 @@ struct Person : Mappable {
     let isRegistered: Bool
     let biographyPoints: [String]
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, gender, city, identifier, registered, biographyPoints
     }
     
@@ -82,7 +82,7 @@ struct SuperheroHelper {
     let name: String
     let id: Int
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name
         case id, identifier, g_id
     }
@@ -122,7 +122,7 @@ struct Superhero {
     let name: String
     let helper: SuperheroHelper
     
-    enum MappingKeys : String, Key {
+    enum MappingKeys : String, MapperKey {
         case name, helper
     }
     

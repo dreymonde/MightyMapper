@@ -3,7 +3,7 @@
 public protocol InMapperProtocol {
     
     associatedtype Source: InMap
-    associatedtype IndexPath: Key
+    associatedtype IndexPath: MapperKey
     
     /// Source of mapping (input).
     var source: Source { get }
@@ -210,7 +210,7 @@ extension ContextualInMapperProtocol {
 }
 
 /// Object that maps structured data instances to strongly-typed instances.
-public struct InMapper<Source : InMap, MappingKeys : Key> : InMapperProtocol {
+public struct InMapper<Source : InMap, MappingKeys : MapperKey> : InMapperProtocol {
     
     public let source: Source
     public typealias IndexPath = MappingKeys
@@ -236,7 +236,7 @@ public struct BasicInMapper<Source : InMap> : InMapperProtocol {
 }
 
 /// Object that maps structured data instances to strongly-typed instances using type-specific context.
-public struct ContextualInMapper<Source : InMap, MappingKeys : Key, Context> : ContextualInMapperProtocol {
+public struct ContextualInMapper<Source : InMap, MappingKeys : MapperKey, Context> : ContextualInMapperProtocol {
     
     public let source: Source
     /// Context is used to determine the way of mapping, so it allows to map instance in several different ways.
