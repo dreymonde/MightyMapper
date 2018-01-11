@@ -25,7 +25,7 @@ public enum OutMapperError : Error {
 
 fileprivate extension OutMapperProtocol {
     
-    func getMap<T>(from value: T) throws -> Destination {
+    func unguaranteedGetMap<T>(from value: T) throws -> Destination {
         if let map = Destination.from(value) {
             return map
         } else {
@@ -73,7 +73,7 @@ extension OutMapperProtocol {
             try set(nil, at: indexPath)
             return
         }
-        let map = try getMap(from: value)
+        let map = try unguaranteedGetMap(from: value)
         try set(map, at: indexPath)
     }
     
@@ -98,12 +98,12 @@ extension OutMapperProtocol {
     /// - parameter indexPath: path to set value to.
     ///
     /// - throws: `OutMapperError`.
-    public mutating func map<T : RawRepresentable>(_ value: T?, to indexPath: IndexPath...) throws {
+    public mutating func map<T : RawRepresentable>(_ value: T?, to indexPath: IndexPath...) throws where T.RawValue : ToOutMapMappable {
         guard let value = value else {
             try set(nil, at: indexPath)
             return
         }
-        let map = try getMap(from: value.rawValue)
+        let map: Destination = try value.rawValue.outMap()
         try set(map, at: indexPath)
     }
     
@@ -130,7 +130,7 @@ extension OutMapperProtocol {
     ///
     /// - throws: `OutMapperError`.
     public mutating func unguaranteedMapArray<T>(_ array: [T], to indexPath: IndexPath...) throws {
-        let maps = try array.map({ try self.getMap(from: $0) })
+        let maps = try array.map({ try self.unguaranteedGetMap(from: $0) })
         let map = try arrayMap(of: maps)
         try set(map, at: indexPath)
     }
@@ -153,8 +153,8 @@ extension OutMapperProtocol {
     /// - parameter indexPath: path to set values to.
     ///
     /// - throws: `OutMapperError`.
-    public mutating func map<T : RawRepresentable>(_ array: [T], to indexPath: IndexPath...) throws {
-        let maps = try array.map({ try self.getMap(from: $0.rawValue) })
+    public mutating func map<T : RawRepresentable>(_ array: [T], to indexPath: IndexPath...) throws where T.RawValue : ToOutMapMappable {
+        let maps = try array.map({ try $0.rawValue.outMap() }) as [Destination]
         let map = try arrayMap(of: maps)
         try set(map, at: indexPath)
     }

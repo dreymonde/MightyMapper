@@ -63,8 +63,8 @@ fileprivate extension InMapperProtocol {
         }
     }
     
-    func rawRepresent<T : RawRepresentable>(_ source: Source) throws -> T {
-        let raw: T.RawValue = try get(from: source)
+    func rawRepresent<T : RawRepresentable>(_ source: Source) throws -> T where T.RawValue : FromInMapMappable {
+        let raw: T.RawValue = try T.RawValue(from: source)
         if let value = T(rawValue: raw) {
             return value
         } else {
@@ -120,7 +120,7 @@ extension InMapperProtocol {
     /// - throws: `InMapperError`.
     ///
     /// - returns: value at `indexPath` represented as `T`.
-    public func map<T : RawRepresentable>(from indexPath: IndexPath...) throws -> T {
+    public func map<T : RawRepresentable>(from indexPath: IndexPath...) throws -> T where T.RawValue : FromInMapMappable {
         let leveled = try dive(to: indexPath)
         return try rawRepresent(leveled)
     }
@@ -172,7 +172,7 @@ extension InMapperProtocol {
     /// - throws: `InMapperError`.
     ///
     /// - returns: array of values at `indexPath` represented as `T`.
-    public func map<T : RawRepresentable>(from indexPath: IndexPath...) throws -> [T] {
+    public func map<T : RawRepresentable>(from indexPath: IndexPath...) throws -> [T] where T.RawValue : FromInMapMappable {
         let leveled = try dive(to: indexPath)
         let array = try self.array(from: leveled)
         return try array.map({ try self.rawRepresent($0) })
